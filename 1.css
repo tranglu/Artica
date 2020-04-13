@@ -1,0 +1,86 @@
+*{margin: 0; padding: 0;} 
+html,body{
+	color: black;
+}
+.navbar{
+	background-color: white;
+}
+.layer1{
+	position: relative;
+	
+}
+.layer2 {
+	position: absolute;
+	top: 25%;
+	left: 20%;
+}
+.nutslide{
+	font-size: 14px;
+	width: 150px;
+	height: 40px;
+	line-height: 30px;
+	padding:0;
+}
+.nut{
+	display: block;
+	width: 50px;
+	height: 50px;
+	color: red;
+}
+.banner{
+	width: 100%;
+	height: 500px;
+	background-image: url("images/slide03.jpg");
+	background-size: cover;
+	position: relative;
+}
+.chu{
+	position: absolute;
+	top: 40%;
+	left: 20%;
+}
+.thucdon{
+	height: 40px;
+	position: absolute;
+	bottom: 5%;
+	left: 35%;
+	font-size: 20px;
+	font-weight: bold;
+}
+.thucdon>a{
+	margin:20px;
+	color: white;
+}
+.tenmon{
+	background: white;
+    transform: translateY(3px);
+    display: inline-block;
+    padding-right: 7px;
+}
+.tren {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color: #333333;
+    border-bottom: 2px dotted #999999;
+}
+.tren>span{
+	 padding-right: 7px;
+	 background: white;
+	 display: inline-block;
+	 transform: translateY(3px);
+}
+.special{
+	background-image: url("images/BG2.jpg");
+	background-size: cover contain;
+	width: 100%;
+	height: 400px;
+}
+.relaxing{
+	width: 100%;
+	height: 400px;
+	background-color: gray;
+	position: relative;
+}
+.contact, footer{
+	background-color: gray;
+}
