@@ -81,6 +81,47 @@ html,body{
 	background-color: gray;
 	position: relative;
 }
-.contact, footer{
-	background-color: gray;
+.contact, footer, .ngay, .gio{
+	background-color: gray !important;
+}
+/* trang about */
+.master_cooking{
+	background-image: url("images/bg_about.jpg");
+}
+/* trang news */
+.noidungtin{
+border-bottom: 1px dotted gray;
+}
+.search{
+	position: relative;
+}
+.nutsearch{
+	position: absolute;
+	top:10px;
+	right: 20px;
+}
+.motcategory{
+	border-bottom: 1px solid gray;
+}
+.motcategory>ul>li{
+	line-height: 35px;
+}
+.ulphantrang>li{
+	display: inline-block;
+	font-size: 15px;
+	text-align: center;
+	display: inline-block;
+    color: #333;
+    border: 1px solid #eee;
+    border-radius: 22px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.current,.ulphantrang>li:hover{
+	background-color: yellow;
+}
+.nutdichuyen{
+	width: 150px !important;
 }
