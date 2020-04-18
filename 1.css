@@ -1,6 +1,16 @@
 *{margin: 0; padding: 0;} 
 html,body{
 	color: black;
+	cursor:pointer;/* chuột hình bàn tay */
+}
+::selection{
+	background: yellow;
+	color: red;
+	
+}
+p.card-text::first-letter{
+	font-size: 50px;
+	color: red;
 }
 .navbar{
 	background-color: white;
@@ -20,6 +30,45 @@ html,body{
 	height: 40px;
 	line-height: 30px;
 	padding:0;
+	animation: dichuyen 0.5s;
+	animation-iteration-count:3;
+}
+.nutslide::selection{
+	content: "thuytrang";
+	color: red;
+}
+@keyframes dichuyen{
+	from{
+		transform: translateY(-5px);
+	}
+	to{
+		transform: translateY(3px);
+	}
+}
+.onestory{
+	animation: xoay 1s forwards;
+}
+
+@keyframes xoay{
+	from{
+		opacity: 0;
+		transform:rotateY(-90deg);
+	}
+	to{
+		opacity: 1		
+	}
+}
+.facebook{
+	animation: xoayngang 0.5s forwards;
+}
+@keyframes xoayngang{
+	from{
+		opacity: 0;
+		transform:rotateZ(90deg);
+	}
+	to{
+		opacity: 1		
+	}
 }
 .nut{
 	display: block;
@@ -33,6 +82,20 @@ html,body{
 	background-image: url("images/slide03.jpg");
 	background-size: cover;
 	position: relative;
+	animation: truotlen 1s forwards;
+}
+.motmon{
+	animation: truotlen 1s forwards;
+}
+@keyframes truotlen{
+	from{
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	to{
+		opacity: 1	
+		transform: translateY(-100px);	
+	}
 }
 .chu{
 	position: absolute;
@@ -84,6 +147,7 @@ html,body{
 .contact, footer, .ngay, .gio{
 	background-color: gray !important;
 }
+
 /* trang about */
 .master_cooking{
 	background-image: url("images/bg_about.jpg");
